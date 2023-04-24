@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>HTML canvas</title>
+</head>
+<body>
+   <h1>HTML Canvas Graphics</h1>
+   <canvas id="myCanvas2" width="200" height="100" style="border:1px solid black;">
+   </canvas><br>
+   <p style="color:blue;font-size:20px;">Canvas is a rectangular area on an HTML page By def, a canvas has no border and no content</p>
+   <h1> Add javascript </h1>
+   <script>
+        var c=document.getElementById("myCanvas2");
+         var ctx = c.getContext("2d");
+          ctx.beginPath();
+         ctx.arc(95, 50, 40, 0, 2*Math.PI);
+         ctx.stroke();
+   </script>
+ </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>   <!--check collapse in border-collapse-->
+<html>
+<head>
+   <title>HTML-Table</title>
+    <style>
+     table{
+        font-family:arial, sans-serif;
+        border-collapse: separate;   
+         width:100%;
+         border: 10px solid blue;
+         border-style: dotted;
+         border-spacing:30px;
+              }
+   td,th{
+         border:2px solid black;
+         text-align: left;
+         padding: 20px;
+          border-radius:20px;
+          border -color:green;
+        }
+     tr:nth-child(even) {
+        background-color: #96D4D4;
+          }
+     tr:hover{
+              background-color:green;
+           }
+  </style>
+</head>
+<body>
+       <h1 style="text-align:center;">HTML-Table</h1>
+        <h2>Table cell defined by td stands for table data</h2>
+        <p>A table cell contain all sorts of HTML elements: text, images,lists,links,etc.</p>
+        <h2>tr stands for table row</h2>
+        <h2>th stands for table header, by default text is bold and centered</h2>
+        <h2>round table borders , use border-radius:20px</h2>
+        <h2> for table borders use border-style property , values are dotted, dashed,solid,double,groove,ridge,inset,outset,none,hidden</h2>
+         <h2>for table column width use width at data cell using width property</h2>
+          <h2>for table row height use height at data cell using height property</h2>
+           <h2> caption inserted after table</h2>
+        <h2>HTML tables adjust padding inside cells, and also space between the cells</h2>
+        <h3>cell padding is space between cell edges and cell content by def it is set to 0 use padding property to set value</h3>
+         <h4>here we have padding-top, padding-bottom, padding-left, padding-right</h4>
+       <h3>Cell spacing is the space between each cell here here we use border-spacing property by Def it is 2 pixels</h3>
+        <h2>for Zebra Stripes effect one other we use tr:nth-child(even/odd) selector  this is for horizontal </h2>
+        <h2> for Vertical Zebra Stripes, we use Like td:nth-child(even), th:nth-child(even) </h2>
+        <h3> for both hor and ver zebra stripes use both using transparent ie. rgba</h3>
+         <h2> if we have only border at bottom use border-bottom</h2>
+         <h2> :hover selector on tr to highlight table rows on mouse over</h2>
+         <h2> use <colgroup> tag that spans 2 columns </h2>
+        <h2> Hide columns by using style="visibility:collapse"</h2>
+       <table>
+           <caption>Hasthinapur</caption>
+           <tr>
+              <th style="width:50%;">pandav's</th>
+               <th colspan="2"> parents and weapons</th>
+           </tr>
+         <tr style="height:200px";>
+              <td rowspan="2">yudhishtira  and<br>  bhima</td>
+              <td>pandu&kunthi</td>
+              <td>Truth</th>
+         </tr>
+         <tr>
+              <td>pandu&kunthi</td>
+              <td>Mace</th>
+         </tr>
+           <tr>
+              <td>Arjun</td>
+              <td>pandu&kunthi</td>
+              <td>Bow &Arrow</th>
+         </tr>
+           <tr>
+              <td>Nakula</td>
+              <td>pandu&Madri</td>
+              <td>Sword</th>
+         </tr>
+           <tr>
+              <td>Sahadeva</td>
+              <td>pandu&Madri</td>
+              <td>Sword</th>
+         </tr>
+      </table>
+    </body>
+</html>
+          

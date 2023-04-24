@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>HTML-Forms</title>
+</head>
+<body>
+    <h1 style="font-weight:bold;color:blue;">HTML Forms</h1>
+    <form >
+        <label  for="fname">First name: </label><br>
+        <input type="text" id="fname" name="fname" value="suma" size="40" maxlength="40" readonly autofocus><br>
+         <input type="text" id="fname" name="fname" placeholder="Enter your firstname:"  autocomplete="on" required><br>
+         <label  for="lname">Last name: </label><br>
+        <input type="text" id="lname" name="lname" value="Reddy" disabled><br> 
+         <h1>Input type password</h1>
+         <label for="pwd">Password: </label><br>
+          <input type="password" id="pwd" name="pwd"><br>
+        <h1>Radio Buttons</h1>
+        <input type="radio" id="html" name="fav_lang" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_lang" value="CSS">
+        <label for="css">CSS</label><br>
+         <input type="radio" id="javascript" name="fav_lang" value="JAVASCRIPT">
+        <label for="javascript">JAVASCRIPT</label><br>
+      <h1>Check Boxes</h1>
+        <input type="checkbox" id="html" name="fav_lang" value="HTML">
+        <label for="html">HTML</label><br>
+       <input type="checkbox" id="css" name="fav_lang" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="javascript" name="fav_lang" value="JAVASCRIPT">
+        <label for="javascript">JAVASCRIPT</label><br>
+      <h1>without name attribute</h1>
+     <label  for="fname">First name: </label><br>
+        <input type="text" id="fname"  value="suma"><br>
+         <label  for="lname">Last name: </label><br>
+        <input type="text" id="lname" value="Reddy"><br>
+   <h1>Input type submit</h1>
+      <input type="button" value="submit"><br>
+    <h1>Input type Reset</h1>
+      <input type="reset"><br>
+  <h1>Input type select</h1>
+      <label for="cars">Choose a car: </label>
+      <select id="cars" name="cars" size="2"  multiple>
+         <option value="volvo">Volvo</option>
+         <option value="saab">saab</option>
+         <option value="fiat">fiat</option>
+         <option value="audi">Audi</option>
+      </select><br>
+  <h1> Inut type textarea</h1>
+  <textarea name="message"  rows="10" cols="30">The cat was playing in the garden</textarea><br>
+  <h1>Input type fieldset</h1>
+   <fieldset>
+       <legend>Personalia: </legend>
+        <label  for="fname">First name: </label><br>
+        <input type="text" id="fname" name="fname" value="suma"><br>
+         <label  for="lname">Last name: </label><br>
+        <input type="text" id="lname" name="lname" value="Reddy"><br>
+        <input type="submit" value="submit"><br><br>
+  </fieldset>
+ <h1>Input type datalist</h1>
+    <input list="browsers">
+       <datalist id="browsers">
+             <option value="Internet Explorer">
+              <option value="FireFox">
+               <option value="Chrome">
+               <option value="Opera">
+              <option value="Safari">
+        </datalist><br>     
+     <h1> input type week</h1>
+          <label for="week">select a week: </label>
+           <input type="week" id="week" name="week"><br>
+     <h1>Input type url</h1>
+           <label for="homepage">Add your homepage: </label>
+           <input type="url" id="homepage" name="homepage"><br>
+     <h1>Input type time</h1>
+          <label for="time">Select a time: </label>
+           <input type="time" id="time" name="time"><br>
+      <h1>Input type tel</h1>
+            <label for="phone">Enter your phone number: </label>
+           <input type="tel" id="phone" name="phone" pattern-"[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+      <h1>Input type search</h1>
+               <label for="gsearch">Select a google: </label>
+             <input type="search" id="gsearch" name="gsearch"><br>
+       <h1>input type Range</h1>
+                 <label for="vol">Volume(between 0 to 50):  </label>
+                <input type="range" id="vol" name="vol" min="0" max="50"><br>
+       <h1>Input type number</h1>
+               <label for="quantity">Quantity between( 1 and 5) </label>
+             <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" step="3" value="3"><br>
+      <h1>Input type month</h1>
+                   <label for="bdaymonth">Birthday(month and year): </label>
+                 <input type="month" id="bdaymonth" name="bdaymonth"><br>
+      <h1>Input type hidden</h1>
+                       <label for="fname">First Name: </label>
+                    <input type="hidden" id="fname" name="fname" value="sum442"><br>
+     <h1>Input type file</h1>
+                       <label for="myfile">Select a file: </label>
+                    <input type="file" id="myfile" name="myfile"><br>
+                      <input type="file" id="myfile" name="myfile" multiple><br>
+     <h1>Input type image</h1>
+           <input type="image"   src="C:\Users\hp\Downloads/pic_bulboff.gif" alt="submit" width="200" height="200"><br>
+     <h1>Input type email</h1>
+          <label for="email">Enter your email: </label>
+        <input type="email" id="email" name="email"><br>
+    <h1>Input type datelocal-time</h1>
+        <label for="birthdaytime">Birthday:(date and time) </label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br> 
+  <h1>input type date</h1>
+         <label for="birthday">Birthday: </label>
+        <input type="date" id="birthday" name="birthday"><br>
+  <h1>Input type color</h1>
+   <input type="color" name="submit" value="#ff0000"><br>
+ <h1>Input type button</h1>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button><br>
+</form>
+   <p>After clicking "submit" button the form-data will sent to server, it process & return request</p>  
+</body>
+</html>
+    

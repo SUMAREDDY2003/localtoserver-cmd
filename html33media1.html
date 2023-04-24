@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>media-video</title>
+</head>
+<body>
+   <div style="text-align:center;">
+   <button  onclick="playPause()">Play/Pause</button>
+   <button onclick="makeBig()">BIG</button>
+   <button onclick="makeSmall()">small</button>
+   <button onclick="makeNormal()">Normal</button>
+   <br><br>
+   <video id="video1"  width="500">
+      <source src="C:\Users\hp\Videos\AnyDesk/hack_of_music__1661911220579593.mp4"  type="video/mp4">
+       <source src="C:\Users\hp\Videos\AnyDesk/hack_of_music__1661911220579593.ogg"  type="video/ogg">
+     </video>
+ </div>
+<script>
+    var myVideo = document.getElementById("video1");
+    function playPause() {
+      if(myVideo.paused)
+            myVideo.play();
+       else
+           myVideo.pause();
+        }
+    function makeBig() {
+     myVideo.width = 560;
+      }
+   function makeSmall() {
+      myVideo.width = 320;
+    }
+ function makeNormal() {
+    myVideo.width = 420;
+     }
+</script>
+</body>
+</html>
+   

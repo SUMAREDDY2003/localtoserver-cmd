@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+      <title>HTML-ID</title>
+     <style>
+      #myHeader {
+               background-color:yellow;
+              color:blue;
+             padding:20px;
+             text-align:center;
+          }
+     .city{
+            background-color:pink;
+            color:violet;
+            text-align:left;
+           }
+     </style>
+ </head>
+ <body>
+       <h1 id="myHeader">HTML-Id attribute is used to specify unique id for an HTML element</h1>
+       <p class="city">We can't have more than one element with the same id in an HTML document</p>
+       <h1 class="city">id is case-sensitive</h1>
+       <p  class="city"> class can be used by multiple HTML elements an id used by only one element within a page</p>
+        <h2>javaScript can access an element with specified id by using <span style="color:green;">getElementById() method</span><br>
+       <button style="width:200px;" onclick="displayResult()">Change Text</button>
+       <script>
+              function displayResult() {
+                     document.getElementById("myHeader").innerHTML = "Hey! it's a Miracle!";
+                       }
+     </script>
+  </body>
+</html>

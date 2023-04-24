@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Locolstorage</title>
+ <script>
+  function clickCounter() {
+  if (typeof(Storage) !== "undefined")
+{ 
+   if (sessionStorage.clickcount) {
+    sessionStorage.clickcount = Number (sessionStorage.clickcount) + 1;
+   }
+  else{
+  sessionStorage.clickcount = 1;
+  }
+
+  document.getElementById("result").innerHTML ="You have clicked the button" + sessionStorage.clickcount + " time(s).";
+   }
+else
+{
+  document.getElementById("result").innnerHTML ="Sorry, your browser doesnot support web storage..";
+}
+}
+</script>
+</head>
+<body>
+    <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+    <div id="result"></div>
+    <p>Click button to see the counter increase</p>
+    <p>close the browser tab and try again, and the counter will continue to count(is not reset).</p>
+</body>
+</html>
